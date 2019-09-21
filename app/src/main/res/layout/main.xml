@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center"
+	android:background="@drawable/kreise1"
+	android:orientation="horizontal">
+
+	<View
+		android:layout_height="match_parent"
+		android:layout_width="20dp"/>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical">
+
+		<TextView
+			android:text="Spieler0: 0 Punkte"
+			android:layout_width="wrap_content"
+			android:id="@+id/mainTextView1"
+			android:textColorPrimary="#000000"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"/>
+
+		<TableLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/mainTableLayout1"
+			android:background="#000000">
+
+		</TableLayout>
+
+		<View
+			android:layout_height="2dp"
+			android:layout_width="match_parent"/>
+
+		<TableLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/mainTableLayout"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp"
+			android:background="@drawable/geflecht1">
+
+		</TableLayout>
+
+		<View
+			android:layout_height="2dp"
+			android:layout_width="match_parent"/>
+
+		<TableLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:id="@+id/mainTableLayout2"
+			android:background="#000000">
+
+		</TableLayout>
+
+		<TextView
+			android:text="Spieler1: 0 Punkte"
+			android:layout_width="wrap_content"
+			android:id="@+id/mainTextView"
+			android:textStyle="bold"
+			android:layout_height="wrap_content"/>
+
+		<View
+			android:layout_height="5dp"
+			android:layout_width="match_parent"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="100dp"
+		android:orientation="vertical"
+		android:id="@+id/mainLinearLayout1"
+		android:textAlignment="gravity"
+		android:rotation="0">
+
+		<LinearLayout
+			android:layout_height="320dp"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="300dp"
+				android:id="@+id/mainTextView2"
+				android:textStyle="bold"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="Spieler0 beginnt mit setzen"
+				android:gravity="left|center"
+				android:rotation="90"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:orientation="horizontal"
+			android:layout_height="120dp">
+
+			<Button
+				android:layout_height="50dp"
+				android:layout_width="wrap_content"
+				android:text="Neu"
+				android:rotation="90"
+				android:gravity="center"
+				android:onClick="button1click"
+				android:id="@+id/mainButton1"
+				android:background="#49E039"
+				android:elevation="1dp"
+				android:shadowDx="10"
+				android:shadowDy="10"
+				android:shadowColor="#000000"
+				android:lines="4"
+				android:ems="30"/>
+
+		</LinearLayout>
+
+		<ImageButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:gravity="right|center"
+			android:src="@android:drawable/ic_menu_close_clear_cancel"
+			android:rotation="90"
+			android:adjustViewBounds="true"
+			android:layout_gravity="center"
+			android:onClick="finishclick"
+			android:id="@+id/mainImageButton1"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
